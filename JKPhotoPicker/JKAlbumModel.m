@@ -34,9 +34,9 @@
         } else {
             // 遍历完成
             _photos = photos;
-            ALAsset *asset = ((JKPhotoModel *)[photos lastObject]).asset;
-            _cover = [UIImage imageWithCGImage:asset.aspectRatioThumbnail];
-            
+//            ALAsset *asset = ((JKPhotoModel *)[photos lastObject]).asset;
+//            _cover = [UIImage imageWithCGImage:asset.aspectRatioThumbnail];
+            _cover = [UIImage imageWithCGImage:[_group posterImage]];
         }
         
     }];
